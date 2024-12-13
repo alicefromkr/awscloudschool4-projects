@@ -11,14 +11,13 @@
             "id": "edeb97934ece5d98",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "diff-view",
               "state": {
-                "file": "Docker/What is Docker?.md",
-                "mode": "source",
-                "source": false
+                "file": "acs-vault/.obsidian/workspace.json",
+                "staged": false
               },
-              "icon": "lucide-file",
-              "title": "What is Docker?"
+              "icon": "git-pull-request",
+              "title": "Diff View (workspace.json)"
             }
           }
         ]
@@ -175,8 +174,10 @@
   },
   "active": "edeb97934ece5d98",
   "lastOpenFiles": [
-    "Linux/Linux Basic.md",
+    "K8s/What is K8s?.md",
     "Docker/What is Docker?.md",
+    "K8s",
+    "Linux/Linux Basic.md",
     "Docker",
     "Memoir/AWS Cloud School Application Memoir.md",
     "Linux",
