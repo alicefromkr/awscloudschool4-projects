@@ -3,7 +3,7 @@ name: Sync Vault to S3
 on:
   push:
     paths:
-      - '**/vault/**'  # This will trigger on any changes in folders containing 'vault'
+      - '${{ secrets.AWS_VAULT_NAME }}/**'  # Only trigger for changes in the specific vault folder
 
 jobs:
   sync-to-s3:
@@ -20,14 +20,9 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: ${{ secrets.AWS_REGION }}
           
-      - name: Sync vault contents to S3
+      - name: Sync vault to S3
         run: |
-          # Find all directories containing 'vault' and sync their contents
-          for dir in $(find . -type d -name "*vault*"); do
-            aws s3 sync $dir s3://${{ secrets.S3_BUCKET }}/${dir#./} \
-              --delete \
-              --exclude ".git/*" \
-              --exclude ".github/*" \
-              --exclude "**/.obsidian/*" \
-              --exclude "**/.obsidian/**"
-          done
+          aws s3 sync ${{ secrets.AWS_VAULT_NAME }} s3://${{ secrets.S3_BUCKET }}/${{ secrets.AWS_VAULT_NAME }} \
+            --delete \
+            --exclude ".obsidian/*" \
+            --exclude ".obsidian/**"
