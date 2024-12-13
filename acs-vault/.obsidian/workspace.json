@@ -11,13 +11,14 @@
             "id": "edeb97934ece5d98",
             "type": "leaf",
             "state": {
-              "type": "diff-view",
+              "type": "markdown",
               "state": {
-                "file": "acs-vault/.obsidian/workspace.json",
-                "staged": false
+                "file": "Docker/What is Docker Swarm?.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "git-pull-request",
-              "title": "Diff View (workspace.json)"
+              "icon": "lucide-file",
+              "title": "What is Docker Swarm?"
             }
           }
         ]
@@ -138,10 +139,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Memoir/AWS Cloud School Application Memoir.md"
+                "file": "Docker/What is Docker Swarm?.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of AWS Cloud School Application Memoir"
+              "title": "Outline of What is Docker Swarm?"
             }
           },
           {
@@ -172,8 +173,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "edeb97934ece5d98",
+  "active": "853736ce708cca39",
   "lastOpenFiles": [
+    "Docker/What is Docker Swarm?.md",
     "K8s/What is K8s?.md",
     "Docker/What is Docker?.md",
     "K8s",
