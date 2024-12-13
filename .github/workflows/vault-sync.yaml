@@ -3,7 +3,7 @@ name: Sync Vault to S3
 on:
   push:
     paths:
-      - '${{ secrets.AWS_VAULT_NAME }}/**'  # Only trigger for changes in the specific vault folder
+      - 'acs-vault/**'
 
 jobs:
   sync-to-s3:
